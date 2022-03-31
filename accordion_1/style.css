@@ -1,0 +1,28 @@
+/*Style accordion (button)*/
+.accordion {
+    background-color: rgb(218, 218, 218); /*Set back*/
+    color: #444; /*Set color for text of accordion*/
+    font-weight: 700; /*Set thick text for accordion*/
+    cursor: pointer; /*Set pointer when hover accordion*/
+    padding: 18px; /*Set padding 18px for top, right, bottom and left*/
+    width: 100%; /*Set width 100% for accordion*/
+    border: none; /*Remove border of button accordion*/
+    text-align: left; /*Align for text of accordion to the left*/
+    outline: none; /*Remove outline of button accordion*/
+    font-size: 15px; /*Set font-size for text of accordion*/
+    transition: 0.4s; /*Set the time for transition of properties*/
+    margin: 2px 0; /*Set margin from top and bottom*/
+    border-radius: 7px; /*Round corners of accordion's borders*/
+}
+  /*Style accordion when add class "active" and when we hover*/
+.active, .accordion:hover {
+    background-color: rgb(230, 149, 0); /*Set background color for accordion when add class "active" and when we hover*/
+    color: white; /*Set color for text of accordion when add class "active" and when we hover*/
+}
+  
+  /*Style for panel (content of accordion)*/
+.panel {
+    padding: 0 18px; /*Set padding for left and right of panel's content*/
+    display: none; /*Hide panel*/
+    background-color: white; /*Set background color for panel*/
+}
