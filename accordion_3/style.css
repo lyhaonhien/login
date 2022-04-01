@@ -1,0 +1,46 @@
+/*Style for normal accordion*/
+.accordion {
+    background: rgb(243, 243, 243);
+    color: #444;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 15px;
+    margin: 2px 0;
+    border-radius: 7px;
+    transition: 0.4s;
+}
+/*Add and style for plus sign (+) to the right of accordion*/
+.accordion:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 16px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+/*Change color of plus sign (+) when hover accordion*/
+.accordion:hover:after {
+    color: white;
+}
+/*Style for accordion when add class "active and when we hover it"*/
+.active, .accordion:hover {
+    background: rgb(223, 15, 0);
+    color: white;
+}
+/*Add minus sign (-) when contain class "active"*/
+.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+    color: white;
+}
+/*Style for panel (content of accordion)*/
+.panel {
+    padding: 0 18px;
+    background: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
