@@ -1,0 +1,48 @@
+/*Import a Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/*Set font-family for body*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid rgb(255, 240, 35);
+    background: #fff38c;
+}
+.tab button {
+    background: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 100px;
+    border-right: 1px solid rgb(187, 187, 187);
+}
+.tab button:hover {
+    background: rgb(214, 193, 0);
+    color: #fff;
+}
+.tab button.active {
+    background: rgb(214, 193, 0);
+    color: #fff;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid rgb(255, 240, 35);
+    background: #f7f7f7;
+    border-top: none;
+    animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
