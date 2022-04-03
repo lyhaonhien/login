@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tabs</title>
+    <!--Add link to an external CSS file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Tabs</h2>
+    <p>Click on the button inside the tabbed menu:</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+        <span class="topright">&times</span>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <span class="topright">&times</span>
+        <h3>Paris</h3>
+        <p>Paris is the capital city of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <span class="topright">&times</span>
+        <h3>Tokyo</h3>
+        <p>London is the capital city of Japan.</p>
+    </div>
+
+    <!--Add link to an external JavaScript file-->
+    <script src="main.js"></script>
+</body>
+</html>
