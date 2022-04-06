@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #ddd;
+}
+
+.topnav {
+    max-width: 100%;
+    height: 85px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 60px;
+}
+.topnav .logo {
+    font-size: 50px;
+    font-weight:600;
+    color: #fff;
+}
+
+.topnav nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.topnav nav ul li {
+    margin: 0 10px;
+}
+
+.topnav nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 10px;
+    letter-spacing: 1px;
+}
+.topnav nav ul li a:hover {
+    border-bottom: 3px solid #fff;
+}
+
+.topnav i {
+    display: none;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+
+    .topnav i {
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .topnav {
+        padding: 0 30px 0 30px;
+    }
+
+    .topnav nav ul {
+        display: block;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .topnav nav ul li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .topnav nav ul li a {
+        opacity: 0;
+        transition: opacity 1.4s;
+    }
+
+    .topnav nav {
+        display: block;
+        position: fixed;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        top: 85px;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    .topnav nav.responsive {
+        left: 0;
+    }
+
+    .topnav nav.responsive ul li a {
+        opacity: 1;
+    }
+
+}
